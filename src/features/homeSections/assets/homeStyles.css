@@ -1,0 +1,5 @@
+#section-header { /* have to write it here since linear gradient with image is not supported by styled components */
+    background-image: linear-gradient(
+        to bottom, rgba(255, 255, 255, 0), white
+    ), url("../assets/images/rose.jpeg");
+}

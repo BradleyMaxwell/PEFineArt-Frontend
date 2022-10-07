@@ -1,0 +1,7 @@
+:root {
+    --product-info-width: 45ch;
+    --shop-carousel-arrow-padding: 0.5rem;
+    --shop-carousel-background-color: #F8F8F8;
+    --shop-carousel-height: calc(100vh - var(--bar-height));
+    --shop-carousel-padding: 2.5rem;
+}

@@ -1,0 +1,141 @@
+:root {
+  --bar-height: 64px;
+  --carousel-border-radius: 3px;
+  --carousel-button-width: calc((100vw - var(--carousel-width) + (2 * var(--carousel-track-margin))) / 2);
+  --carousel-track-margin: 15px;
+  --carousel-width: 85vw;
+  --tab-border-width: 1.5px;
+  --theme-boxshadow: 0px 3px 10px rgba(68, 68, 68, 0.3);
+  --theme-boxshadow-hover: rgba(68, 68, 68, 0.8) 0px 29px 37px -13px, rgba(68, 68, 68, 0.72) 0px 19px 13px -10px;
+  --theme-darkgrey: #444444;
+  --theme-darkred: #C2331D;
+  --theme-darkpink: #DEABB0;
+  --theme-lightpink: #F9D9DB;
+  --theme-lightred: #FF726F;
+  --theme-feint-darkgrey: rgba(68, 68, 68, 0.1);
+  --theme-lower-opacity-darkgrey: rgba(68, 68, 68, 0.8);
+  --theme-pink: #F2B8BE;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+main {
+  min-height: calc(100vh - var(--bar-height));
+  height: fit-content;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* FONTS */
+
+h1, h2, h3, h4, p {
+  font-weight: normal; /* used to standardise font size and then change for specific elements with styled components */
+  letter-spacing: 0.5px;
+  color: var(--theme-darkgrey);
+}
+
+h1, h2, h3, h4 {
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+/* HELPER CLASSES */
+
+.max-width-container {
+  max-width: 1400px;
+  display: block;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+}
+
+.center-content-x {
+  display: flex;
+  justify-content: center;
+}
+
+.center-content-y {
+  display: flex;
+  align-items: center;
+}
+
+.center-content-xy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blur-background {
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: red;
+}
+
+/* HEADER / FOOTER */
+
+header, footer {
+  min-height: var(--bar-height);
+}
+
+/* CAROUSEL */
+
+.carousel-hidden-overflow .slick-list {
+  overflow: hidden;
+}
+
+.carousel-overflow .slick-list {
+  overflow: visible;
+}
+
+/* TOASTS */
+
+.Toastify__toast-container {
+  z-index: 999999999 !important;
+}

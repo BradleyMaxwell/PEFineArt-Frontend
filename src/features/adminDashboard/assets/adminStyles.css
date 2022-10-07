@@ -1,0 +1,93 @@
+label {
+font-size: 1.15rem;
+letter-spacing: 0.3px;
+margin-bottom: 0.4rem;
+}
+
+input, textarea, select {
+border: 1px solid var(--theme-lower-opacity-darkgrey);
+border-radius: 8px;
+font-size: 1rem;
+padding: 0.8rem;
+}
+
+.error-message {
+margin-top: 40px;
+background-color: var(--theme-lightred);
+border: 2px solid var(--theme-darkred);
+border-radius: var(--carousel-border-radius);
+padding: 1rem;
+width: fit-content;
+}
+
+.submit-button {
+    background-color: var(--theme-pink);
+    border: 1px solid var(--theme-darkpink);
+    border-radius: 6px;
+    box-shadow: 0px 3px 10px lightgrey;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    padding: 1.2rem;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.submit-button:hover {
+    filter: brightness(1.05);
+}
+
+.admin-add-button {
+    border-radius: 50px;
+    border-style: none;
+    font-size: 1rem;
+    letter-spacing: 1.6px;
+    padding: 1.2rem 1.5rem;
+    text-transform: uppercase;
+}
+
+.admin-add-button img {
+    aspect-ratio: 1 / 1;
+    max-height: 1.1rem;
+    border-radius: 100%;
+}
+
+.admin-add-button:hover {
+    filter: brightness(0.95);
+}
+
+.delete-edit-button {
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
+    border: 1.5px solid transparent;
+    border-radius: 50px;
+    display: flex;
+    width: 3rem;
+    position: relative;
+    transition: border 200ms;
+}
+
+.delete-edit-button img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.delete-edit-button:hover {
+    border-color: lightgrey;
+}
+
+.active-tab .tab-border {
+    border-color: var(--theme-darkgrey) !important;
+}
+  
+.active-tab-content {
+    display: block !important;
+}
+
+.react-tabs__tab-panel--selected {
+    padding: 2rem;
+}
